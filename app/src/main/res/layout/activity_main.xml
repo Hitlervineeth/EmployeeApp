@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:tint="@color/purple_500"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logogroup" />
+    <TextView
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEMO APP"/>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/loading_animation" />
+    <TextView
+        android:id="@+id/text_fetching_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetching details..."
+        style="@style/TextAppearance.AppCompat.Small"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

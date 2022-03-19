@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.ScanBarcodeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="Scan Barcode"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingEnd="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo_white_choithrams" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:id="@+id/saved_item_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="right"
+            android:gravity="right">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/purple_500"
+                app:cardElevation="10dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carted_btn"
+                android:onClick="shoeCartedList"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:elevation="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:padding="12dp"
+                    android:src="@drawable/icon_cart_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/full_round_right_border_with_out_strock_with_bordercolor" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/scanner_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/control_switch_background_border"
+                android:checkedButton="@+id/internal_scanner"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/internal_scanner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/control_switch_background_selector_middle"
+                    android:button="@null"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Camera"
+                    android:textColor="@drawable/control_switch_color_selector" />
+
+                <RadioButton
+                    android:id="@+id/external_scanner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/control_switch_background_selector_middle"
+                    android:button="@null"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:padding="10dp"
+
+                    android:text="Scanner"
+                    android:textColor="@drawable/control_switch_color_selector" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:clickable="true"
+                android:elevation="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="scanBarCode"
+                app:contentPaddingRight="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/semi_round_border_without_strock"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/logo_barcode_scaner" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="SCAN BARCODE"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/checkbox_manual_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:buttonTint="@color/purple_500"
+                    android:checked="false"
+                    android:text="ENABLE MANUAL SEARCH"
+                    android:foregroundTint="@color/purple_500" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_field_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Barcode number"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/purple_500"
+                    app:endIconDrawable="@drawable/icon_search">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/text_filed_barcode_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/icon_qr_code"
+                        android:drawablePadding="15dp"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

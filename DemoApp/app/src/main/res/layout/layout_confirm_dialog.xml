@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="5dp">
+   <LinearLayout
+       android:padding="10dp"
+       android:background="@drawable/semi_round_border_without_strock"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+           android:gravity="center|right"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="25dp"
+               android:layout_height="30dp" />
+           <TextView
+               android:id="@+id/txt_main_tittle"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="TITTLE"
+               style="@style/TextAppearance.AppCompat.Large"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+           <TextView
+               android:id="@+id/txt_sub_tittle"
+               android:padding="5dp"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="SUB TITTLE"
+               style="@style/TextAppearance.AppCompat.Medium"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+           <LinearLayout
+               android:paddingTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2">
+               <com.google.android.material.button.MaterialButton
+                   android:layout_marginRight="10dp"
+                   app:cornerRadius="5dp"
+                   android:id="@+id/btn_cancel"
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                  android:backgroundTint="@color/md_red_A700"
+                   android:text="no" />
+               <com.google.android.material.button.MaterialButton
+                   android:layout_marginLeft="10dp"
+                   app:cornerRadius="5dp"
+                   android:id="@+id/btn_ok"
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                   android:text="yes" />
+
+           </LinearLayout>
+       </LinearLayout>
+   </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

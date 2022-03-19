@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_Projects/white_rabit_mechin_test/app/src/main/res/drawable-v24/custom_cursor.xml" value="0.14947916666666666" />
+        <entry key="..\:/Android_Projects/white_rabit_mechin_test/app/src/main/res/drawable-v24/full_round_right_border_with_out_strock.xml" value="0.14947916666666666" />
+        <entry key="..\:/Android_Projects/white_rabit_mechin_test/app/src/main/res/drawable-v24/full_round_right_border_with_out_strock_with_bordercolor.xml" value="0.14947916666666666" />
+        <entry key="..\:/Android_Projects/white_rabit_mechin_test/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14947916666666666" />
+        <entry key="..\:/Android_Projects/white_rabit_mechin_test/app/src/main/res/drawable-v24/icon_close_green.xml" value="0.14947916666666666" />
+        <entry key="..\:/Android_Projects/white_rabit_mechin_test/app/src/main/res/layout/activity_employee_details.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/white_rabit_mechin_test/app/src/main/res/layout/activity_employee_listing_ui.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/white_rabit_mechin_test/app/src/main/res/layout/activity_main.xml" value="0.10364583333333334" />
+        <entry key="..\:/Android_Projects/white_rabit_mechin_test/app/src/main/res/layout/employee_obj_layout.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

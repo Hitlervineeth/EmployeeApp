@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.softland.choithrams">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_PRECISE_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_choithram_square"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_choithram_circle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Choithrams"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activitys.ApprovedStatusScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.SavedJobItemDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.PendingApprovalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.PendingApprovalScreenActivity"
+            android:exported="true"
+            android:label="@string/title_activity_pending_approval_screen"
+            android:theme="@style/Theme.Choithrams.NoActionBar" />
+        <activity
+            android:name=".activitys.LiveJobsScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.HomeScreenManagerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.ItemDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.ScanBarcodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.SaveJobHomeScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.NewJobHomeScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.PickingScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.HomeScreenPickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.LoginScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activitys.BarcodeCaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/slide_in_right" />
+
+        <activity
+            android:name=".activitys.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
